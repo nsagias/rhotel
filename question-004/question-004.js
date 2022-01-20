@@ -15,17 +15,19 @@ fetch('/echo/', {
     body: 'json=' + encodeURIComponent(JSON.stringify(json.json)) + '&delay=' + json.delay
 })
 .then(function (response) {
-    server_echo = response.json().echo  // not a function  for javascript
+    server_echo = response.json().echo  // not a function for javascript
     return response.json();
 })
 .then(function (result) {
-    alert(result);
+  // function declares and alert for a browser as a result
+  // don't see the purpose for a fetch call to do this.
+    alert(result);  
 })
 .catch (function (error) {
     console.log('Request failed', error);
 });
 
-// original declaration is with out a type/interface
+// original declaration is with out a type/interface as empty variable
 // this will return and error if it is not an array[]
 server_echo.forEach(
     element => console.log(element)
