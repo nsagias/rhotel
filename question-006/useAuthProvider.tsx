@@ -63,6 +63,6 @@ const useAuthProvider = () => {
   };
 
   // function is not exported
-  // export default useAuthProvider
+  // export default useAuthProvider;
   // export any other variables that are wanted to be available from the auth provider
-  // export default  tenantId, userId, accessToken
+  // export default userLogin, tenantId, userId, accessToken;
