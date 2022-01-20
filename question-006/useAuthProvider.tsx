@@ -1,8 +1,8 @@
 // 6. Consider the code below, please describe what you would change 
 // to improve this code.
 
-
-const useAuthProvide = () => {
+// fix spelling
+const useAuthProvider = () => {
   const [tenantId, setTenantId] = useState(
     window.localStorage.getItem('tenantId'),
   );
@@ -12,6 +12,7 @@ const useAuthProvide = () => {
     window.localStorage.getItem('access_token'),  
   );
   const history = useHistory();
+  // user login
   const userLogin = async (
     email: string,
     password: string,
@@ -27,6 +28,7 @@ const useAuthProvide = () => {
         },
       });
       if (response.data) {
+        // remove console log
         console.log(JSON.stringify(response.data, null, 2));
         if (response.data.type !== 'tenant') {
           // alert('Unauthorized User');
