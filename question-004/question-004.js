@@ -15,6 +15,7 @@ fetch('/echo/', {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json'
     },
+    // sending a URI when the type listed is json
     body: 'json=' + encodeURIComponent(JSON.stringify(json.json)) + '&delay=' + json.delay
 })
 .then(function (response) {
