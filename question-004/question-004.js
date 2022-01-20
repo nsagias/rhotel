@@ -6,6 +6,9 @@ var json = {
     }),
     delay: 3
 }; // declared as var and can be  re-assigned by another function, naming difficult to read
+
+
+// complete path is missing
 fetch('/echo/', {
     method: 'post',
     headers: {
