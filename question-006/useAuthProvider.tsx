@@ -1,11 +1,13 @@
 // 6. Consider the code below, please describe what you would change 
 // to improve this code.
 
+
 // fix spelling
 const useAuthProvider = () => {
   const [tenantId, setTenantId] = useState(
     window.localStorage.getItem('tenantId'),
   );
+  // create interface/ set type for userId
   const [userId, setUserId] = useState(window.localStorage.getItem('userId'));
   const [accessToken, setAccessToken] = useState(
     // I would not use localstorage as it not secure for auth
