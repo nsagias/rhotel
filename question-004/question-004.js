@@ -1,11 +1,11 @@
 var server_echo;  // declared as var and can be  re-assigned by another function
-var json = {
+var json = {  // naming method doesn't clarify whta is being sent, difficult to read/debug
     json: JSON.stringify({
         a: 1,
         b: 2
     }),
     delay: 3
-}; // declared as var and can be  re-assigned by another function, naming difficult to read
+}; // declared as var and can be  re-assigned by another function 
 
 
 // complete path is missing
