@@ -36,7 +36,7 @@ const useAuthProvide = () => {
           window.localStorage.setItem('tenantId', response.data.tenantId);
           setTenantId(response.data.tenantId);
           // remove id from appearing in console
-          // console.log('tenantId:' + tenantId);
+          console.log('tenantId:' + tenantId);
           window.localStorage.setItem(
             'access_token',
             response.data.accessToken,
@@ -46,6 +46,8 @@ const useAuthProvide = () => {
         }
       }
     } catch (e) {
-      // alert('Error Happened');
+      // remove this as it exposes and error
+      // cat the error and leve it empty
+      alert('Error Happened');
     }
   };
