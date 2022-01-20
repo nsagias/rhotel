@@ -15,7 +15,7 @@ const useAuthProvider = () => {
     window.localStorage.getItem('access_token'),  
   );
   const history = useHistory();
-  // user login
+  // user login is never use, if user loging false?
   const userLogin = async (
     email: string,
     password: string,
@@ -35,15 +35,18 @@ const useAuthProvider = () => {
         console.log(JSON.stringify(response.data, null, 2));
         if (response.data.type !== 'tenant') {
           // remove alert
-          // throw error and cat the catch(e) below 
+          // throw error and catch(e) below do not print console.log
           alert('Unauthorized User');
         } else {
+          // if using provider should not be using windows localstorage
           window.localStorage.setItem('userId', response.data.userId);
           setUserId(response.data.userId);
           window.localStorage.setItem('tenantId', response.data.tenantId);
           setTenantId(response.data.tenantId);
           // remove id from appearing in console
           console.log('tenantId:' + tenantId);
+
+          // access token set
           window.localStorage.setItem(
             'access_token',
             response.data.accessToken,
@@ -58,3 +61,8 @@ const useAuthProvider = () => {
       alert('Error Happened');
     }
   };
+
+  // function is not exported
+  // export default useAuthProvider
+  // export any other variables that are wanted to be available from the auth provider
+  // export default  tenantId, userId, accessToken
