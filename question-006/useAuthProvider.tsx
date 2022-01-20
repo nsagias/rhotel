@@ -31,7 +31,9 @@ const useAuthProvider = () => {
         // remove console log
         console.log(JSON.stringify(response.data, null, 2));
         if (response.data.type !== 'tenant') {
-          // alert('Unauthorized User');
+          // remove alert
+          // throw error and cat the catch(e) below 
+          alert('Unauthorized User');
         } else {
           window.localStorage.setItem('userId', response.data.userId);
           setUserId(response.data.userId);
