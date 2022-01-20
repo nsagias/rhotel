@@ -1,6 +1,6 @@
 // Refactor the code below. By refactor we mean that you 
-// should reorganize the code to reduce the unnecessary complexity, and i
-// mprove readability.  
+// should reorganize the code to reduce the unnecessary complexity, and 
+// improve readability.  
 
 // In this process you 
 // should not modify the way the code functions. 
@@ -10,12 +10,12 @@ if (recipe == 'SPANISH') {
   fudge = SPANISH_FUDGE;
   amt = base * SPANISH_FUDGE;
 } 
-if (recipe == 'FRENCH') {
+else if (recipe == 'FRENCH') {
   fudge = FRENCH_FUDGE;
   amt = base * fudge;
   chocolate = 7;
 } 
-if (recipe == 'ENGLISH') {
+else if (recipe == 'ENGLISH') {
   fudge = ENGLISH_FUDGE;
   amt = base * fudge;
 } 
