@@ -8,7 +8,8 @@ const useAuthProvider = () => {
     window.localStorage.getItem('tenantId'),
   );
   // create interface/ set type for userId
-  const [userId, setUserId] = useState(window.localStorage.getItem('userId'));
+  // add useEffect to check if window.localStorage.getItem('userId')) if true setUserId
+  const [userId, setUserId] = useState(window.localStorage.getItem('userId'));  // 
   const [accessToken, setAccessToken] = useState(
     // I would not use localstorage as it not secure for auth
     window.localStorage.getItem('access_token'),  
