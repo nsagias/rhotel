@@ -14,6 +14,7 @@ const useAuthProvider = () => {
     // I would not use localstorage as it not secure for auth
     window.localStorage.getItem('access_token'),  
   );
+  // wrap in a useHistory in handler
   const history = useHistory();
   // user login is never use, if user loging false?
   const userLogin = async (
