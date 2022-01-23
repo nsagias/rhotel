@@ -13,6 +13,7 @@
 ## form
 - Form colour: #147DDA
 - Entire Form: 529px width, 541px height
+- Form padding: 29px
 - Full name:   470px width, 42px  height
 - DOB:         192px width, 42px  height
 - Country:     257px width, 42px  height
