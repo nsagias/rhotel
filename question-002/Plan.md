@@ -1,0 +1,5 @@
+- extract image from document
+- import to folder
+- use figma to get pixel sizes
+- extract colour
+- use boilderplate html/css project for base
