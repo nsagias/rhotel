@@ -12,7 +12,8 @@
 export const authContext = createContext();
 
 // fix spelling
-const useAuthProvider = () => {
+// add props 
+const useAuthProvider = (props) => {
   // getting logic direct from useState, shoule be a variable  before  
   // or  useEffect to a variable
   // no error handly if  empty 
