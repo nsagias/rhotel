@@ -1,6 +1,8 @@
 // 6. Consider the code below, please describe what you would change 
 // to improve this code.
-
+import React, {useState } from "react";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 // fix spelling
 const useAuthProvider = () => {
@@ -11,7 +13,6 @@ const useAuthProvider = () => {
   // add useEffect to check if window.localStorage.getItem('userId')) if true setUserId
   const [userId, setUserId] = useState(window.localStorage.getItem('userId'));  // 
   const [accessToken, setAccessToken] = useState(
-    // I would not use localstorage as it not secure for auth
     window.localStorage.getItem('access_token'),  
   );
   // wrap in a useHistory in handler
