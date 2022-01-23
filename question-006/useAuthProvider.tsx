@@ -53,7 +53,6 @@ const useAuthProvider = () => {
           // throw error and catch(e) below do not print console.log
           alert('Unauthorized User');
         } else {
-          // if using provider should not be using windows localstorage
           window.localStorage.setItem('userId', response.data.userId);
           setUserId(response.data.userId);
           window.localStorage.setItem('tenantId', response.data.tenantId);
