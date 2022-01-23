@@ -11,6 +11,7 @@
 - https://www.figma.com/file/vtZelE13hDEJjMCuPLkakn/Untitled
 
 ## form
+- Form colour: #147DDA
 - Entire Form: 529px width, 541px height
 - Full name:   470px width, 42px  height
 - DOB:         192px width, 42px  height
