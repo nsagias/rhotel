@@ -53,10 +53,14 @@ const useAuthProvider = () => {
           // throw error and catch(e) below do not print console.log
           alert('Unauthorized User');
         } else {
+
+          // use variables and not handled data directly
+          // could refactor into a handleSetItem()
           window.localStorage.setItem('userId', response.data.userId);
           setUserId(response.data.userId);
           window.localStorage.setItem('tenantId', response.data.tenantId);
           setTenantId(response.data.tenantId);
+
           // remove id from appearing in console
           console.log('tenantId:' + tenantId);
 
