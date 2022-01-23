@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,16 @@
   height: 100vh;
   overflow: hidden;
   margin: 0;
-} */
+}
 
 .form-container{
   margin:0 auto; 
   width:529px;
   height: 541px;
-  padding:29px;
+  padding-top:15px;
+  padding-bottom: 15px;;
+  padding-left:29px;
+  padding-right: 29px;
   background:#f9f9f9;
   border:2px solid #333;
   }
