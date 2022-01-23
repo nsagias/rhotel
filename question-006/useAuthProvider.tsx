@@ -1,17 +1,26 @@
 // 6. Consider the code below, please describe what you would change 
 // to improve this code.
-import React, {useState } from "react";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
+
+
+// add imports
+// import React, {useState } from "react";
+// import { useHistory } from "react-router-dom";
+// import axios from "axios";
 
 // fix spelling
 const useAuthProvider = () => {
+  // getting logic direct from useState, shoule be a variable  before  
+  // or  useEffect to a variable
+  // no error handly if  empty 
   const [tenantId, setTenantId] = useState(
     window.localStorage.getItem('tenantId'),
   );
   // create interface/ set type for userId
   // add useEffect to check if window.localStorage.getItem('userId')) if true setUserId
   const [userId, setUserId] = useState(window.localStorage.getItem('userId'));  // 
+  // getting logic direct from useState, shoule be a variable  before  
+  // or  useEffect to a variable
+  // no error handly if  empty 
   const [accessToken, setAccessToken] = useState(
     window.localStorage.getItem('access_token'),  
   );
