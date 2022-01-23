@@ -26,7 +26,7 @@ const useAuthProvider = () => {
   );
   // wrap in a useHistory in handler
   const history = useHistory();
-  // user login is never use, if user loging false?
+  
   const userLogin = async (
     email: string,
     password: string,
