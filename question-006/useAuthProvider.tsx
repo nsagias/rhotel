@@ -2,10 +2,14 @@
 // to improve this code.
 
 
+
+
 // add imports
-// import React, {useState } from "react";
+// import React, { createContext, useState } from "react";
 // import { useHistory } from "react-router-dom";
 // import axios from "axios";
+
+export const authContext = createContext();
 
 // fix spelling
 const useAuthProvider = () => {
@@ -72,8 +76,15 @@ const useAuthProvider = () => {
       alert('Error Happened');
     }
     
-    // hooks 
-    // return { userLogin, tenantId, userId, accessToken, history };
+    // complete the provider component
+    // const data = { userLogin, tenantId, userId, accessToken, history };
+
+    // return (
+    //   < authContext.Provider value = {data}>
+    //     {props.children}
+    //   </ authContext.Provider>
+    // )
+  
   };
 
   // function is not exported
