@@ -51,7 +51,7 @@ export default function DatamuseRyhmes() {
             
         </p>
         <p className="submit">
-          <button type="submit" name="commit">search</button>
+          <button type="submit">search</button>
         </p>
       </form>
       <ul>
