@@ -44,8 +44,8 @@ input:-webkit-autofill{
   margin:0 auto; 
   width:529px;
   height: 541px;
-  padding-top:15px;
-  padding-bottom: 15px;;
+  padding-top:20px;
+  padding-bottom: 20px;;
   padding-left:29px;
   padding-right: 29px;
   color: white;
@@ -54,6 +54,8 @@ input:-webkit-autofill{
 
   .container-column {
     display: flex;
+    padding-top:31px;
+    padding-bottom: 38px;
   }
 
   
@@ -96,6 +98,8 @@ input:-webkit-autofill{
     margin-top: 5px;
     margin-bottom: 5px;
   }
+
+  
   .studyarea {
     width: 469px;
     height: 158px;
