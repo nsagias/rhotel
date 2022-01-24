@@ -23,11 +23,8 @@ export default function DatamuseRyhmes() {
   const keyWord = "forgetful";
   const [word, setWord] = useState(keyWord);
   const [wordsThatRhyme, setWordsThatRhyne] = useState([]);
-  // console.log("keyword", keyWord);
-  // console.log("word",word);
-  console.log("world that rhyme",wordsThatRhyme);
+  
 
-  // https://api.datamuse.com/words?rel_rhy=forgetful
   const API = `https://api.datamuse.com/words?rel_rhy=${word}`;
     useEffect(() => {
       axios.get(API).then(res => {
