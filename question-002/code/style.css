@@ -82,7 +82,10 @@ input:-webkit-autofill{
     border:solid 1px #ccc;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    margin-left: 20px;
+  }
+  .country-label {
+    margin-left: 20px;
   }
 
   .school {
