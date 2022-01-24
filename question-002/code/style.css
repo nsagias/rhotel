@@ -21,6 +21,13 @@ input[type="text"] {
     padding-right: 10px;
 }
 
+input[type="date"] {
+  font-size:17px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .form-container{
   margin:0 auto; 
   width:529px;
