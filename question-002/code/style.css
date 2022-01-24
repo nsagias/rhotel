@@ -19,6 +19,7 @@ input[type="text"] {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #147DDA;
 }
 
 input[type="date"] {
@@ -26,8 +27,18 @@ input[type="date"] {
   color: white;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #147DDA;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px  #147DDA inset !important;
+}
+input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
+}
 
 .form-container{
   margin:0 auto; 
@@ -85,6 +96,7 @@ input[type="date"] {
     margin-bottom: 5px;
 
   }
+
   ::placeholder {
     color: white;
     padding-top:15px;
