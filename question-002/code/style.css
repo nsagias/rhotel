@@ -34,4 +34,21 @@ body {
     margin-bottom: 5px;
   }
 
+  .dob {
+    width: 192px;
+    height: 42px;
+    background-color: #147DDA;
+    border:solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   
+  .country {
+    width: 257px;
+    height: 42px;
+    background-color: #147DDA;
+    border:solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
