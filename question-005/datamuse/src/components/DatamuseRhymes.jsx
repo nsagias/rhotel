@@ -52,10 +52,14 @@ export default function DatamuseRyhmes() {
     <div>
       <form onSubmit={onSubmit}>
         <p>
-          <input type="text" name="word"
-            value={word} placeholder="Type in word"
+          <input 
+            type="text" 
+            name="word"
+            value={word} 
+            placeholder="Type in word"
             // onChange={event => setWord(event.target.value)} />
-            onChange={setFormData} />
+            onChange={setFormData} 
+          />
         </p>
         <p className="submit">
           <button type="submit">search</button>
