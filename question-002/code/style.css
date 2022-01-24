@@ -51,6 +51,12 @@ input:-webkit-autofill{
   color: white;
   background:#147DDA;
   }
+
+  .container-column {
+    display: flex;
+  }
+
+  
   .fullname {
     width: 470px;
     height: 42px;
