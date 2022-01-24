@@ -21,4 +21,4 @@
 - DOB:         192px width, 42px  height
 - Country:     257px width, 42px  height
 - School:      469px width, 42px  height
-- To Study:    469px width, 158px height
+- studyarea:    469px width, 158px height

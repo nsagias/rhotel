@@ -42,7 +42,7 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  
+
   .country {
     width: 257px;
     height: 42px;
@@ -50,5 +50,24 @@ body {
     border:solid 1px #ccc;
     margin-top: 5px;
     margin-bottom: 5px;
+    
   }
+
+  .school {
+    width: 469px;
+    height: 42px;
+    background-color: #147DDA;
+    border:solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .studyarea {
+    width: 469px;
+    height: 158px;
+    background-color: #147DDA;
+    border:solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
 
