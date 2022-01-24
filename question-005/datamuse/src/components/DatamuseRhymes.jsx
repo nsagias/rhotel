@@ -37,9 +37,12 @@ export default function DatamuseRyhmes() {
     useEffect(() => {
       axios.get(API).then(res => {
         setWordsThatRhyne(res.data)
+      }).catch(err => {
+        // only for testing
+        console.log(err.message);
       })
       // setWordsThatRhyne(data)
-    }, [word]);
+    }, [API]);
 
   const parseWordsThatRhyme = Array.isArray(wordsThatRhyme) && wordsThatRhyme.map((rhymeWord, index) => (
     <li key={index}>{rhymeWord.word}</li>
