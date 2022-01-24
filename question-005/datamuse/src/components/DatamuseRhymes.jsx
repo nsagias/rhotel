@@ -24,25 +24,21 @@ export default function DatamuseRyhmes() {
   const [word, setWord] = useState("");
   const [wordsThatRhyme, setWordsThatRhyne] = useState([]);
   
-  const onSubmit = function(event) {
-    event.preventDefault();
-    // setWord("");
-  };
-
-  const setFormData = function(event) {
-    setWord(event.target.value)
-  };
 
   const API = `https://api.datamuse.com/words?rel_rhy=${word}&max=10`;
-    useEffect(() => {
-      axios.get(API).then(res => {
-        setWordsThatRhyne(res.data)
-      }).catch(err => {
-        // only for testing
-        console.log(err.message);
-      })
-      // setWordsThatRhyne(data)
-    }, [API]);
+  const onSubmit = function(event) {
+    event.preventDefault();
+  
+    axios.get(API).then(res => {
+      setWordsThatRhyne(res.data)
+    }).catch(err => {
+      // only for testing
+      console.log(err.message);
+    })
+      setWord("");
+  };
+
+ 
 
   const parseWordsThatRhyme = Array.isArray(wordsThatRhyme) && wordsThatRhyme.map((rhymeWord, index) => (
     <li key={index}>{rhymeWord.word}</li>
@@ -52,14 +48,16 @@ export default function DatamuseRyhmes() {
     <div>
       <form onSubmit={onSubmit}>
         <p>
+          <label>Enter Word to search for that rhymes</label>
+          <br />
           <input 
             type="text" 
             name="word"
             value={word} 
             placeholder="Type in word"
-            // onChange={event => setWord(event.target.value)} />
-            onChange={setFormData} 
-          />
+            onChange={(event) => setWord(event.target.value)} />
+            {/* // onChange={setFormData}  */}
+          {/* /> */}
         </p>
         <p className="submit">
           <button type="submit">search</button>
