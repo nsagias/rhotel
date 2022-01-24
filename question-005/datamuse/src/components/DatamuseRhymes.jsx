@@ -27,7 +27,11 @@ export default function DatamuseRyhmes() {
   const onSubmit = function(event) {
     event.preventDefault();
     // setWord("");
-  }
+  };
+
+  const setFormData = function(event) {
+    setWord(event.target.value)
+  };
 
   const API = `https://api.datamuse.com/words?rel_rhy=${word}&max=10`;
     useEffect(() => {
@@ -35,7 +39,7 @@ export default function DatamuseRyhmes() {
         setWordsThatRhyne(res.data)
       })
       // setWordsThatRhyne(data)
-    }, [API]);
+    }, [word]);
 
   const parseWordsThatRhyme = Array.isArray(wordsThatRhyme) && wordsThatRhyme.map((rhymeWord, index) => (
     <li key={index}>{rhymeWord.word}</li>
@@ -47,8 +51,8 @@ export default function DatamuseRyhmes() {
         <p>
           <input type="text" name="word"
             value={word} placeholder="Type in word"
-            onChange={event => setWord(event.target.value)} />
-            
+            // onChange={event => setWord(event.target.value)} />
+            onChange={setFormData} />
         </p>
         <p className="submit">
           <button type="submit">search</button>
