@@ -29,13 +29,13 @@ export default function DatamuseRyhmes() {
     // setWord("");
   }
 
-  const API = `https://api.datamuse.com/words?rel_rhy=${word}`;
+  const API = `https://api.datamuse.com/words?rel_rhy=${word}&max=10`;
     useEffect(() => {
       axios.get(API).then(res => {
         setWordsThatRhyne(res.data)
       })
       // setWordsThatRhyne(data)
-    }, [word]);
+    }, [API]);
 
   const parseWordsThatRhyme = Array.isArray(wordsThatRhyme) && wordsThatRhyme.map((rhymeWord, index) => (
     <li key={index}>{rhymeWord.word}</li>
